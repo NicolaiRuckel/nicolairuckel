@@ -1,4 +1,4 @@
 baseURL = "http://nicolai.ruckel.de"
-theme = "bare"
+theme = "nicolai"
 languageCode = "en-us"
 title = "nicolai.ruckel.de"
