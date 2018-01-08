@@ -1,3 +1,14 @@
 <header>
-  this is a header
+  <nav class="nav-right">
+    <ul>
+      <li><a href="/post">Blog</a></li>
+      {{ range first 10 .Site.RegularPages }}
+        {{ if eq .Type "page" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+      <li><a href= {{.Site.RSSLink }}>RSS Feed</a></li>
+    </ul>
+  </nav>
+  <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
 </header>

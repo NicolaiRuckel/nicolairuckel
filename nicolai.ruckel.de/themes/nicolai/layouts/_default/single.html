@@ -1,9 +1,10 @@
 {{ partial "head.html" . }}
 
 {{ partial "header.html" . }}
-{{ partial "navigation.html" . }}
 
 <h1>{{ .Title }}</h1>
+<article>
 {{ .Content }}
+</article>
 
 {{ partial "footer.html" . }}
