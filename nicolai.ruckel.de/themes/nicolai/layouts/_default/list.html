@@ -2,12 +2,13 @@
 
 {{ partial "header.html" . }}
 
+<main>
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <section class="posts">
   <ul>
     <!-- orders content according to the "date" field in front matter -->
-    {{ range .Data.Pages.ByDate }}
+    {{ range .Data.Pages.ByDate.Reverse }}
     <li>
       <a href="{{ .Permalink }}">
         <time>{{ .Date.Format "2006-01-02" }}</time> &ndash; {{ .Title }}
@@ -16,4 +17,5 @@
     {{ end }}
   </ul>
 </section>
+</main>
 {{ partial "footer.html" . }}

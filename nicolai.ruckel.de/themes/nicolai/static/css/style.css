@@ -42,6 +42,10 @@ h3 {
   font-size: 1em;
 }
 
+main h1, h2, h3 {
+  margin: 0 0 0.5em 0;
+}
+
 article h1, h2, h3 {
   margin: 0.5em 0 0.2em 0;
 }
