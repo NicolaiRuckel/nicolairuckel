@@ -5,6 +5,4 @@ date: 2017-12-14T19:43:29+01:00
 draft: false
 ---
 
-## about me
-
-i'm a computer science student from Germany
+hi.

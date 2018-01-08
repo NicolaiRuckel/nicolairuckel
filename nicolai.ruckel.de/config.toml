@@ -1,4 +1,9 @@
 baseURL = "http://nicolai.ruckel.de"
 theme = "nicolai"
 languageCode = "en-us"
-title = "nicolai.ruckel.de"
+title = "awesome website"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
