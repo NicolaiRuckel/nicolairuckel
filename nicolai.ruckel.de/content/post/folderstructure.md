@@ -36,6 +36,10 @@ are listed on top on Linux systems.
 ├── bin
 ├── desktop
 ├── documents
+|   ├── banking
+|   ├── invoices
+|   ├── scans
+|   └── work
 ├── dotfiles
 ├── downloads
 ├── dropbox
@@ -47,6 +51,10 @@ are listed on top on Linux systems.
 |   |   ├── samples
 |   |   └── tones
 |   ├── pictures
+|   |   └── photos
+|   ├── text
+|   |   ├── sheet music
+|   |   └── ebooks
 |   ├── video
 |   |   ├── movies
 |   |   ├── tv-shows
@@ -64,6 +72,7 @@ are listed on top on Linux systems.
 |   ├── audio
 |   |   ├── music
 |   |   └── other
+|   ├── pictures
 |   └── video
 └── uni
 ```
@@ -82,7 +91,8 @@ shell scripts.
 I don't even know why this folder exists.
 
 ### ~/documents
-Text-based files like ebooks, invoices or decklists for MtG and Scrolls.
+Text-based files like bank statements, invoices or scans of documents that are
+related to me.
 
 ### ~/dotfiles
 My [dotfiles](https://github.com/RanaExMachina/dotfiles).
@@ -105,6 +115,9 @@ Audio files such as music or audiobooks.
 
 #### ~/media/pictures
 Photos, screenshots, logos, etc.
+
+#### ~/media/text
+Non-personal text files like books or sheet music.
 
 #### ~/media/video
 Movies and TV shows.  Also a separate folder for anime.
@@ -155,13 +168,6 @@ there is a lot of stuff I didn't really do by myself (lecture scripts etc.).
 
 ## Open Questions
 
-### Documents
-I'm not sure whether `documents` should be on the top level or inside `media`
-since some of those files are consumable media by other people (e.g. ebooks) and
-others are my own work (e.g. letters or invoices).  Maybe those should be
-separated in `~/media/text` and `~/documents`.
-
-### Virtual Machines
 Sometimes I have to use a virtual machine to check if my software works on other
 systems but I have no idea where to put the virtual machine files.  Currently
 they are on the top level in `HOME` which I don't really like but I don't know a
