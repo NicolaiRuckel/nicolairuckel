@@ -39,8 +39,10 @@ are listed on top on Linux systems.
 |   ├── banking
 |   ├── invoices
 |   ├── scans
-|   └── work
+|   ├── work
+|   └── ...
 ├── dotfiles
+|   └── ...
 ├── downloads
 ├── dropbox
 ├── media
@@ -51,7 +53,8 @@ are listed on top on Linux systems.
 |   |   ├── samples
 |   |   └── tones
 |   ├── pictures
-|   |   └── photos
+|   |   ├── photos
+|   |   └── ...
 |   ├── text
 |   |   ├── sheet music
 |   |   └── books
@@ -62,6 +65,7 @@ are listed on top on Linux systems.
 |   |       ├── movies
 |   |       └── tv-shows
 |   └── games
+|   |   └── ...
 ├── projects
 |   ├── dev
 |   |   ├── configs
@@ -73,8 +77,11 @@ are listed on top on Linux systems.
 |   |   ├── music
 |   |   └── other
 |   ├── pictures
+|   |   └── ...
 |   └── video
+|       └── ...
 └── uni
+    └── ...
 ```
 
 ## Thoughts On My Structure
