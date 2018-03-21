@@ -1,5 +1,5 @@
 ---
-title: "Reorganizing my Home Directory Structure"
+title: "Reorganizing my Home Directory"
 date: 2018-03-11T18:41:46+01:00
 draft: true
 ---
@@ -198,24 +198,24 @@ I'm not a huge fan of Dropbox but I need this for some projects.
 ### ~/media
 Everything media related that is done by other people.
 
-#### ~/media/apps
+### ~/media/apps
 Installer and binaries of various applications that I backuped but probably
 never use again.  This excludes games.
 
-#### ~/media/audio
+### ~/media/audio
 Audio files such as music or audio books.
 
-#### ~/media/pictures
+### ~/media/pictures
 Photos, screenshots, logos, etc.
 
-#### ~/media/text
+### ~/media/text
 Non-personal text files like books or sheet music.  Sheet music may seem a bit
 weird here but it fits nowhere else.
 
-#### ~/media/video
+### ~/media/video
 Movies and TV shows.  Also a separate folder for anime.
 
-#### ~/media/games
+### ~/media/games
 Game binaries that don't have a place in `/opt` (e.g. exe files of old RPG
 Maker games) and my Steam library.
 
@@ -223,31 +223,31 @@ Maker games) and my Steam library.
 This is everything I worked on.  This mostly copies `~/media` with the addition
 of some folders and some simplifications.
 
-#### ~/projects/dev
+### ~/projects/dev
 All projects that have to do with code. Most of them are just git repositories
 or include git repositories.
 
-##### ~/projects/dev/configs
+### ~/projects/dev/configs
 Configuration files that are not in `~/dotfiles` either because they have weird
 locations or are for other machines (e.g. gitolite configs).
 
-##### ~/projects/dev/games
+### ~/projects/dev/games
 Various attempts to program a game.  Maybe someday I finish something.
 
-##### ~/projects/dev/latex
+### ~/projects/dev/latex
 Also known as the macro hell.  Here are my LaTeX templates.
 
-##### ~/projects/dev/programming
+### ~/projects/dev/programming
 Programming that isn't a game (i.e. will get finished someday).
 
-##### ~/projects/dev/web
+### ~/projects/dev/web
 Web pages.
 
-#### ~/projects/audio
+### ~/projects/audio
 All audio-related projects. `~/projects/audio/music` contains a folder for each
 band I worked with.
 
-#### ~/projects/video
+### ~/projects/video
 There was a time I wanted to make movies.  This is also the reason why I need
 big HDDs.
 
