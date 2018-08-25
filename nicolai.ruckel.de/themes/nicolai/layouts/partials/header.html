@@ -1,6 +1,7 @@
 <header>
-  <nav class="nav-right">
+  <nav class="nav-main">
     <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
       <li><a href="/post">Blog</a></li>
       {{ range first 10 .Site.RegularPages }}
       {{ if eq .Type "page" }}
@@ -11,6 +12,23 @@
     </ul>
   </nav>
 
-  <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
-  <h2>{{ .Site.Params.subtitle }}</h2>
+  <nav class="social">
+    <ul>
+      <li>
+        <a href={{ .Site.Params.github }}>
+          <img src={{ "svg/github.svg" | absURL }} alt="github"/>
+        </a>
+      </li>
+      <li>
+        <a href={{ .Site.Params.twitter }}>
+          <img src={{ "svg/twitter.svg" | absURL }} alt="twitter"/>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="title">
+    <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
+    <h2>{{ .Site.Params.subtitle }}</h2>
+  </div>
 </header>
