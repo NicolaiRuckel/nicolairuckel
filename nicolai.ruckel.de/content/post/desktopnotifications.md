@@ -33,24 +33,28 @@ Of course this wasn't a good solution and from time to time I would search for
 better solutions until I found something very interesting today in the man page
 of Dunst:
 
-    Within rules you can specify a script to be run every time the rule is
-    matched by assigning the 'script' option to the name of the script to be
-    run.
-    When the script is called details of the notification that triggered it will
-    be passed via command line parameters in the following order: appname,
-    summary, body, icon, urgency.
-    [...]
-    If the notification is suppressed, the script will not be run unless
-    always_run_scripts is set to true.
+```plaintext
+Within rules you can specify a script to be run every time the rule is
+matched by assigning the 'script' option to the name of the script to be
+run.
+When the script is called details of the notification that triggered it will
+be passed via command line parameters in the following order: appname,
+summary, body, icon, urgency.
+[...]
+If the notification is suppressed, the script will not be run unless
+always_run_scripts is set to true.
+```
 
 So I could filter *all* messages, suppress the notification and run a script
 instead, which gets passed the application name as the first parameter with this
 rule:
 
-    [urgent_hints]
-            summary = "*"
-            script = ~/dotfiles/scripts/set_urgent_hint.sh
-            format = ""
+```plaintext
+[urgent_hints]
+        summary = "*"
+        script = ~/dotfiles/scripts/set_urgent_hint.sh
+        format = ""
+```
 
 The script just takes it's first argument (the application name) and sets the
 urgency hint with `wmctrl`.
