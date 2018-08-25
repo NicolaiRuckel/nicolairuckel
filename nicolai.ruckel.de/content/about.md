@@ -10,6 +10,9 @@ that I do in my free time.
 You can find this website and my other projects on
 [Github]({{ .Site.Params.github }}). Feel free to reuse them if not stated
 otherwise on the project page.
+Content from this page is distributed under the INSERTLICENSEHERE Creative
+Commons License. This means you can share and repost everything for non-profit
+websites as long as you something something I am the author, plz remember.
 
 # FAQ
 
