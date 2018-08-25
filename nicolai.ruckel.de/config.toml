@@ -3,6 +3,9 @@ theme = "nicolai"
 languageCode = "en-us"
 title = "awesome website"
 
+pygmentsCodefences = true
+pygmentsUseClasses = true
+
 [taxonomies]
   tag = "tags"
   category = "categories"

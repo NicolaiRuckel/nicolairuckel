@@ -6,7 +6,6 @@
 :root {
   --fg-color: #24292e;
   --link-color: #005faf;
-  --code-color: #f3f3f3;
 }
 
 body {
@@ -66,19 +65,13 @@ article {
   text-align: justify;
 }
 
+article p {
+  padding: 0.5em 0em;
+}
+
 article ol,
 article ul{
   margin: 0.5em 0 0.5em 2em;
-}
-
-article code {
-  padding: 0.1em 0.2em;
-}
-
-article pre {
-  margin: 1em 1em;
-  padding: 0.5em 1em;
-  background-color: var(--code-color);
 }
 
 header {
