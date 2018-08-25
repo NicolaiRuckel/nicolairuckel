@@ -34,8 +34,8 @@ While I was in heaven notification-wise, I struggled with the window manager.
 Finally, I decided that non-tiling window manager are to inconvenient to use and
 started again to find a solution for minimal notifications with i3 that did not
 restrict me too much in the choice of my programs.
-I started researching and asked on
-[Reddit](https://www.reddit.com/r/i3wm/comments/7egp8x/minimal_notifications/)
+I started researching and [asked on
+Reddit](https://www.reddit.com/r/i3wm/comments/7egp8x/minimal_notifications/)
 but I could not find a solution and no one could help me.
 My compromise (as recommended by someone on Reddit) was using
 [Dunst](https://github.com/dunst-project/dunst) which at least had the option to
