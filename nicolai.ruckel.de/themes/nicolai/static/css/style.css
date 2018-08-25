@@ -134,7 +134,7 @@ nav ul li {
 }
 
 .social {
-  list-style: non;
+  list-style: none;
   display: flex;
   justify-content: flex-end;
 }
