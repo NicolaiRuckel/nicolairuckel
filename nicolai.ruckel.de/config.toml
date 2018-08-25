@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 
 [params]
   subtitle = "the most awesome website in the internet"
-  copyright = "© 2017 Nicolai Ruckel. All rights reserved."
+  copyright = "© 2017 Nicolai Ruckel"
   mail = "mailto:nicolai@ruckel.de"
   github = "https://github.com/RanaExMachina"
   instagram = "https://www.instagram.com/der_bassist/"
