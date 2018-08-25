@@ -1,8 +1,7 @@
 ---
 title: "Integer ornare"
 date: 2017-12-14T19:26:15+01:00
-draft: false
-series: cryptography
+draft: true
 ---
 Integer ornare
 tempor commodo. Nullam bibendum, nisi ut aliquam luctus, est nisl
