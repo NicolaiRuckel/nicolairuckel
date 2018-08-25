@@ -1,4 +1,8 @@
 <header>
+  <div id="title">
+    <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
+    <h2>{{ .Site.Params.subtitle }}</h2>
+  </div>
   <nav class="nav-main">
     <ul>
       <li><a href="{{ .Site.BaseURL }}">Home</a></li>
@@ -8,10 +12,8 @@
       <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
       {{ end }}
-      <li><a href= {{.Site.RSSLink }}>RSS Feed</a></li>
     </ul>
   </nav>
-
   <nav class="social">
     <ul>
       <li>
@@ -24,11 +26,11 @@
           <img src={{ "svg/twitter.svg" | absURL }} alt="twitter"/>
         </a>
       </li>
+      <li>
+        <a href= {{.Site.RSSLink }}>
+          <img src={{ "svg/rss.svg" | absURL }} alt="rss"/>
+        </a>
+      </li>
     </ul>
   </nav>
-
-  <div id="title">
-    <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
-    <h2>{{ .Site.Params.subtitle }}</h2>
-  </div>
 </header>

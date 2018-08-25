@@ -44,16 +44,18 @@ h3 {
 
 header {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #title {
+  text-align: right;
   margin-top: 3em;
   margin-bottom: 1.5em;
 }
 
 header h1 {
   line-height: 1.2;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 
 header h2 {
@@ -116,6 +118,7 @@ code {
 
 nav ul li {
   display: inline;
+  font-size: 1.2em;
 }
 
 .nav-main {
@@ -138,6 +141,11 @@ nav ul li {
 
 .social li {
   padding-left: 2em;
+}
+
+.social img {
+  height: 1.2em;
+  width: auto;
 }
 
 .recent ul {
