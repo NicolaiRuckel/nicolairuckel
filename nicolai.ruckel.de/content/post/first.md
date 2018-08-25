@@ -33,21 +33,23 @@ amet magna sit amet ipsum volutpat efficitur. Nulla nec quam vel mauris faucibus
 suscipit in id sem. Suspendisse at cursus nisl, at tempus elit. Nullam at risus
 rhoncus, ultricies mi a, faucibus ex. Nam non pellentesque justo.
 
-    Phasellus consectetur neque enim, sed elementum metus facilisis eu. In volutpat,
-    nisl eu luctus sollicitudin, turpis augue placerat libero, a consequat ligula
-    risus sit amet arcu. Maecenas at massa at sapien tincidunt iaculis. Ut hendrerit
-    nisl nec lorem pretium faucibus.
+```c
+// In sed dignissim diam. Nulla facilisi.
+#ifdef efficitur
+char Maecenas[] = "volutpat nunc dui";
+sollicitudin(urna, finibus, vitae);
+```
+
 Aenean eu bibendum justo. Nullam laoreet
 feugiat purus quis semper. Quisque tristique ultricies quam, eu iaculis orci
 lobortis aliquet.
 
-```sh
-#!/bin/sh
-
-echo "Maecenas volutpat nunc dui"
-echo "at sollicitudin urna finibus vitae"
-echo "In sed dignissim diam. Nulla facilisi."
-```
+{{< highlight c "linenos=table,hl_lines=200 3 15-17,linenostart=199" >}}
+// In sed dignissim diam. Nulla facilisi.
+#ifdef efficitur
+char Maecenas[] = "volutpat nunc dui";
+sollicitudin(urna, finibus, vitae);
+{{< / highlight >}}
 
 Morbi velit justo, semper sed justo convallis, interdum vestibulum mi. Praesent
 urna nulla, lobortis sed pretium eget, volutpat vel sapien. Maecenas in
