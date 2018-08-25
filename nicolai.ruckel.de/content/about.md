@@ -24,7 +24,7 @@ Feel free to drop me an [email]({{ .Site.Params.email }}) if you have comments,
 Spaces.
 
 ## Vim or Emacs?
-NeoVim. Unless you need Emacs's Org-mode.
+[NeoVim](https://neovim.io/). Unless you need Emacs's Org-mode.
 
 ## Best IDE?
-Unix
+[Unix](https://sanctum.geek.nz/arabesque/series/unix-as-ide/)
