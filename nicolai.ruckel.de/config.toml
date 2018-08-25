@@ -1,7 +1,7 @@
 baseURL = "http://nicolai.ruckel.de"
 theme = "nicolai"
 languageCode = "en-us"
-title = "awesome website"
+title = "Nicolai Ruckel"
 
 pygmentsCodefences = true
 pygmentsUseClasses = true
@@ -12,7 +12,7 @@ pygmentsUseClasses = true
   series = "series"
 
 [params]
-  subtitle = "the most awesome website in the internet"
+  subtitle = ""
   copyright = "© 2017 Nicolai Ruckel"
   mail = "mailto:nicolai@ruckel.de"
   github = "https://github.com/RanaExMachina"
