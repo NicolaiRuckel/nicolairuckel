@@ -166,7 +166,7 @@ nav ul li {
 .social img {
   height: 1.2em;
   width: auto;
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 .recent ul {
