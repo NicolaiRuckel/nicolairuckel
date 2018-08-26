@@ -7,11 +7,12 @@
   --fg-color: #24292e;
   --link-color: #005faf;
   --link-color-visited: #870087;
+  --main-color: #005faf;
+  --title-color: #ffffff;
+  --max-width: 960px;
 }
 
 body {
-  max-width: 960px;
-  margin: 40px auto;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   font-size: 18px;
@@ -43,14 +44,21 @@ h3 {
 }
 
 header {
-  margin-top: 2em;
+  /* margin-top: 2em; */
   margin-bottom: 2em;
 }
 
-#title {
-  text-align: right;
-  margin-top: 3em;
+#titlebar {
+  text-align: left;
+  /* margin-top: 3em; */
   margin-bottom: 1.5em;
+  background-color: var(--main-color);
+}
+
+#title {
+  margin: 0px auto;
+  max-width: var(--max-width);
+  text-align: right;
 }
 
 header h1 {
@@ -67,17 +75,22 @@ header h2 {
 header h1 a:link,
 header h1 a:visited,
 header h1 a:active {
-  color: var(--fg-color);
+  color: var(--title-color);
 }
 
 main h1 {
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+main {
+  margin: 40px auto;
+  max-width: var(--max-width);
 }
 
 .post-date {
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 article h1,
@@ -116,12 +129,19 @@ code {
   background-color: #f6f8fa;
 }
 
+nav {
+  margin: 40px auto;
+  max-width: var(--max-width);
+}
+
 nav ul li {
   display: inline;
   font-size: 1.2em;
 }
 
 .nav-main {
+  display: inline;
+  font-size: 1.2em;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -129,8 +149,8 @@ nav ul li {
   position: absolute;
 }
 
-.nav-main ul li {
-  margin-right: 1em;
+.nav-main li {
+  margin-right: 1.5em;
 }
 
 .social {

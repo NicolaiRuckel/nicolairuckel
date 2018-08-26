@@ -1,10 +1,12 @@
 <header>
-  <div id="title">
-    <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
-    <h2>{{ .Site.Params.subtitle }}</h2>
+  <div id="titlebar">
+    <div id="title">
+      <h1><a href={{ .Site.BaseURL }}>{{ .Site.Title }}</a></h1>
+      <h2>{{ .Site.Params.subtitle }}</h2>
+    </div>
   </div>
-  <nav class="nav-main">
-    <ul>
+  <nav>
+    <ul class="nav-main">
       <li><a href="{{ .Site.BaseURL }}">Home</a></li>
       <li><a href="/post">Blog</a></li>
       {{ range first 10 .Site.RegularPages }}
@@ -13,9 +15,7 @@
       {{ end }}
       {{ end }}
     </ul>
-  </nav>
-  <nav class="social">
-    <ul>
+    <ul class="social">
       <li>
         <a href={{ .Site.Params.github }}>
           <img src={{ "svg/github.svg" | absURL }} alt="github"/>
