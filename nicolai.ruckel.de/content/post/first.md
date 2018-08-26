@@ -1,5 +1,5 @@
 ---
-title: "Integer ornare"
+title: "Integer ornare tempor commodo"
 date: 2017-12-14T19:26:15+01:00
 draft: true
 ---
@@ -10,7 +10,7 @@ ac ante ipsum primis in faucibus. Vestibulum aliquam justo non felis fermentum
 commodo. Ut vehicula lacus sed nibh consequat ultrices. Pellentesque pharetra
 libero eu lectus pretium interdum. Quisque [gravida](http://localhost), leo ut condimentum egestas,
 sem augue
-auctor sapien, sodales consectetur sapien risus vel mauris. Fusce
+auctor sapien, sodales consectetur sapien[^1] risus vel mauris. Fusce
 consectetur, leo eget auctor iaculis, elit enim pellentesque ante, ut
 [pharetra](http://localhost)
 turpis est vitae ex. In posuere vitae mi at efficitur. Vivamus convallis porta
@@ -80,3 +80,5 @@ Nulla vehicula blandit magna, eget [sollicitudin](https://localhost) diam aliqua
 porttitor sem, cursus vulputate eros tincidunt nec. Quisque ullamcorper lorem at
 metus vehicula venenatis. Interdum et malesuada fames ac ante ipsum primis in
 faucibus.
+
+[^1]: Aenean eleifend nec sapien nec finibus
