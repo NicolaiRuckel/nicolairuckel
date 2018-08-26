@@ -69,7 +69,7 @@ with this rule:
         format = ""
 ```
 
-The script just takes it's first argument (the application name) and sets the
+The script takes the application name as it's first argument and sets the
 urgency hint with `wmctrl`.
 
 ```sh
