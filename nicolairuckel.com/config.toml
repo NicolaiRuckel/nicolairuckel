@@ -1,4 +1,4 @@
-baseURL = "http://nicolai.ruckel.de"
+baseURL = "http://nicolairuckel.com"
 theme = "nicolai"
 languageCode = "en-us"
 title = "Nicolai Ruckel"
@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 
 [params]
   subtitle = ""
-  copyright = "© 2018 Nicolai Ruckel"
+  copyright = "© 2019 Nicolai Ruckel"
   mail = "mailto:nicolai@ruckel.de"
   github = "https://github.com/NicolaiRuckel"
   twitter = "https://twitter.com/NicolaiRuckel"
