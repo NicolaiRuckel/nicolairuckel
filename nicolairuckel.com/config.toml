@@ -13,7 +13,7 @@ pygmentsUseClasses = true
 
 [params]
   subtitle = ""
-  copyright = "🄯 2019 Nicolai Ruckel"
+  copyright = ""
   mail = "mailto:nicolai@ruckel.de"
   github = "https://github.com/NicolaiRuckel"
   twitter = "https://twitter.com/NicolaiRuckel"
