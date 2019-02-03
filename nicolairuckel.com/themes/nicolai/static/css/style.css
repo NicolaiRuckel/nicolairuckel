@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   font-size: 18px;
   color: var(--fg-color);
@@ -49,6 +49,7 @@ header {
 }
 
 #titlebar {
+  padding-right: 10px;
   text-align: left;
   /* margin-top: 3em; */
   margin-bottom: 1.5em;
@@ -84,7 +85,7 @@ main h1 {
 }
 
 main {
-  margin: 40px auto;
+  margin: 40px 20px;
   max-width: var(--max-width);
 }
 
@@ -125,11 +126,21 @@ article ul{
   margin: 0.5em 0 0.5em 2em;
 }
 
+.highlight {
+  max-width: var(--max-width);
+  overflow: auto;
+}
+
 code {
+  font-size: 16px;
   background-color: #f6f8fa;
 }
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 40px auto;
   max-width: var(--max-width);
 }
@@ -140,13 +151,12 @@ nav ul li {
 }
 
 .nav-main {
-  display: inline;
   font-size: 1.2em;
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   font-weight: 600;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .nav-main li {
@@ -156,17 +166,23 @@ nav ul li {
 .social {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
-.social li {
-  padding-left: 2em;
+.social li:not(:last-child) {
+  margin-right: 1em;
 }
 
 .social img {
   height: 1.2em;
   width: auto;
   vertical-align: text-bottom;
+}
+
+@media (min-width: 30rem) {
+  .social {
+    margin-left: auto;
+  }
 }
 
 .recent ul {
