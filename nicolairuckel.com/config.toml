@@ -1,4 +1,4 @@
-baseURL = "http://nicolairuckel.com"
+baseURL = "https://nicolairuckel.com"
 theme = "nicolai"
 languageCode = "en-us"
 title = "Nicolai Ruckel"
