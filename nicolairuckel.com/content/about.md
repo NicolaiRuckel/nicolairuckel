@@ -26,6 +26,3 @@ Feel free to drop me an [email]({{ .Site.Params.email }}) if you have comments,
 
 ## Tabs or Spaces?
 Spaces.
-
-## Best IDE?
-Unix.
