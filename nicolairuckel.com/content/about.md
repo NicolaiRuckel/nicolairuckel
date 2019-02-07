@@ -21,8 +21,8 @@ credit me and share your work under the same license.
 This website does not have a comment section and won't get one in the future.
 While I'm open for feedback and think discussion is very valuable, personal
 blogs are a bad place for this in general and only attract bots and trolls.
-Feel free to drop me an [email]({{ .Site.Params.email }}) if you have comments,
-(constructive) criticism or just want to say hi.
+Feel free to drop me an [email]({{ .Site.Params.email }}) if you have any
+comments or just want to say hi.
 
 ## Tabs or Spaces?
 Spaces.
