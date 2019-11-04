@@ -9,7 +9,7 @@
   --link-color-visited: #870087;
   --main-color: #005faf;
   --title-color: #ffffff;
-  --max-width: 54rem;
+  --max-width: 44rem;
 }
 
 body {
@@ -134,7 +134,7 @@ article ul{
 }
 
 code {
-  font-size: 16px;
+  font-size: 14px;
   background-color: #f6f8fa;
 }
 
