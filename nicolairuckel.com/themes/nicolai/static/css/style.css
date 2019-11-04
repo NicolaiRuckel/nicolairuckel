@@ -9,13 +9,13 @@
   --link-color-visited: #870087;
   --main-color: #005faf;
   --title-color: #ffffff;
-  --max-width: 44rem;
+  --max-width: 48rem;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--fg-color);
 }
 
@@ -133,7 +133,7 @@ article ul{
 }
 
 code {
-  font-size: 14px;
+  font-size: 15px;
   background-color: #f6f8fa;
 }
 
