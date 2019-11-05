@@ -59,6 +59,14 @@ header {
   margin: 0px auto;
   max-width: var(--max-width);
   text-align: right;
+  height: 4em;
+}
+
+#title img {
+  max-height: 100%;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header h1 {
