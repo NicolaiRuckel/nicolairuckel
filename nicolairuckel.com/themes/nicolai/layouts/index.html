@@ -1,19 +1,6 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 <main>
-<section class="recent">
-    <h2>latest posts:</h2>
-    <ul>
-    {{ range first 10 .Data.Pages }}
-      {{ if eq .Type "post" }}
-        <li>
-          <a href="{{ .Permalink }}">
-            <time>{{ .Date.Format "2006-01-02" }}</time> &ndash; {{ .Title }}
-          </a>
-        </li>
-      {{ end }}
-    {{ end }}
-    </ul>
-</section>
+  {{ .Content }}
 </main>
 {{ partial "footer.html" . }}
