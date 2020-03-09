@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset=utf-8><link rel=icon href=/favicon.ico><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/syntax.css><meta name=viewport content="width=device-width,initial-scale=1"><title>Minimal Desktop Notifications</title></head><body><header><div id=titlebar><div id=title><h1><a href=https://nicolairuckel.com><img src=https://nicolairuckel.com/svg/logo.svg alt=logo></a></h1><h2></h2></div></div><nav><ul class=nav-main><li><a href=https://nicolairuckel.com>Home</a></li><li><a href=/post>Blog</a></li></ul><ul class=social><li><a href=https://github.com/NicolaiRuckel><img src=https://nicolairuckel.com/svg/github.svg alt=github></a></li><li><a href=https://twitter.com/NicolaiRuckel><img src=https://nicolairuckel.com/svg/twitter.svg alt=twitter></a></li><li><a href=https://nicolairuckel.com/index.xml><img src=https://nicolairuckel.com/svg/rss.svg alt=rss></a></li></ul></nav></header><main><div class=post-date>May 12, 2018</div><h1>Minimal Desktop Notifications</h1><article><p>When I started my computer science studies in 2010, I used to get notifications
+for a lot of events.
+Even non-events like information on the song that was currently playing
+resulted in a pop-up notification.
+At some point I got really annoyed by all those pop-up notifications and
+replaced all of them with badges on the dock icon or in the status bar.
+This also had the advantage that I could leave my laptop for while, come back
+and did not miss anything important since all notifications persisted the whole
+time.</p><p>Since I switched from macOS to Linux as my main operating system, I used
+<a href=https://i3wm.org/>i3</a> as my window manager.
+By default, it doesn&rsquo;t support notifications, but programs could set the
+<a href=https://tronche.com/gui/x/icccm/sec-4.html#s-4.1.2.4>urgency hint</a> which
+resulted in a highlighted workspace and therefore was similar to what I was used
+to from my Mac.
+This was fine as long as I used programs that could set the urgent hint but
+there were more and more programs that did not have such an option.
+Sometimes, I had to choose older applications with fewer features or worse UI
+simply because they could set the urgency hint and newer ones couldn&rsquo;t.</p><p>At some point this got very unsatisfying and I switched to the Gnome desktop,
+which allows to just show a little circle in the status bar when new
+notifications occurred.
+This very minimal option for showing notifications was supported by all my
+programs.
+While I was in heaven notification-wise, I struggled with the window manager.
+Finally, I decided that non-tiling window manager are too inconvenient to use
+and started again to find a solution for minimal notifications with i3 that did
+not restrict me too much in the choice of my programs.
+I started researching and <a href=https://www.reddit.com/r/i3wm/comments/7egp8x/minimal_notifications/>asked on
+Reddit</a>
+but I could not find a solution and no one could help me.
+My compromise (as recommended by someone on Reddit) was using
+<a href=https://github.com/dunst-project/dunst>Dunst</a> which at least had the option to
+make notifications small, non-animated and persistent, so I did not have to pay
+attention to them all the time.
+Of course this wasn&rsquo;t a good solution and from time to time I would search for
+better solutions.
+Then I found something very interesting today in the man page
+of Dunst:</p><div class=highlight><pre class=chroma><code class=language-plaintext data-lang=plaintext>Within rules you can specify a script to be run every time the rule is
+matched by assigning the &#39;script&#39; option to the name of the script to be
+run.
+When the script is called details of the notification that triggered it will
+be passed via command line parameters in the following order: appname,
+summary, body, icon, urgency.
+[...]
+If the notification is suppressed, the script will not be run unless
+always_run_scripts is set to true.
+</code></pre></div><p>So I figured I could filter <em>all</em> messages, suppress the notification and run a
+script instead, which gets passed the application name as the first parameter
+with this rule:</p><div class=highlight><pre class=chroma><code class=language-plaintext data-lang=plaintext>[urgent_hints]
+        summary = &#34;*&#34;
+        script = ~/dotfiles/scripts/set_urgent_hint.sh
+        format = &#34;&#34;
+</code></pre></div><p>The script takes the application name as its first argument and sets the
+urgency hint with <code>wmctrl</code>.</p><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh><span class=cp>#!/bin/sh
+</span><span class=cp></span>
+wmctrl -r <span class=nv>$1</span> -b add,demands_attention
+</code></pre></div><p>You can find all the configuration and script files in my <a href=https://github.com/NicolaiRuckel/dotfiles>dotfiles
+repository</a>.</p></article></main><footer><a href=https://creativecommons.org/licenses/by-sa/4.0/ id=license><img src=https://nicolairuckel.com/svg/cc.svg alt=cc>
+<img src=https://nicolairuckel.com/svg/by.svg alt=by>
+<img src=https://nicolairuckel.com/svg/sa.svg alt=sa></a><br></footer></body></html>
